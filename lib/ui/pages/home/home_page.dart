@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pizza_delivery/models/up_menu/up_menu.dart';
+import 'package:pizza_delivery/const/dummy_data.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/popular_section/popular_section.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/promo_carousel/promo_carousel.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/restaurants/restaurants.dart';
@@ -17,7 +17,14 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             SearchWidget(),
-            UpMenuCard(),
+            Row(
+              children: DummyData.dummyMenu
+                  .map((e) => UpMenuCard(
+                        icon: e.icon,
+                        title: e.name,
+                      ))
+                  .toList(),
+            ),
             Restaurants(),
             PromoCarousel(),
             PopularSection(),

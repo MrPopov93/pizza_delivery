@@ -2,7 +2,6 @@ import 'package:pizza_delivery/const/asset_images.dart';
 import 'package:pizza_delivery/models/pizza/pizza_model.dart';
 import 'package:pizza_delivery/models/place/place_model.dart';
 import 'package:pizza_delivery/models/up_menu/up_menu.dart';
-import 'package:pizza_delivery/ui/pages/home/widgets/up_menu/up_menu.dart';
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
@@ -12,10 +11,34 @@ class DummyData {
   ];
 
   static final List<PlaceModel> dummyPlaces = [
-    PlaceModel(name: 'SkyPizza', address: 'Dobrovolskogo 23', rating: 4.3, commuteTime: 15, imagePreview: PhotoRestourants.restourantSkyPizza),
-    PlaceModel(name: 'Mafia', address: 'Zakory 26', rating: 4.6, commuteTime: 12, imagePreview: PhotoRestourants.restourantMafia),
-    PlaceModel(name: 'RestoPresto', address: 'Dniprovska 2', rating: 4.0, commuteTime: 5, imagePreview: PhotoRestourants.restourantRestoPresto),
-    PlaceModel(name: 'Bufet', address: 'Moskovskiy prospekt 256', rating: 4.8, commuteTime: 23, imagePreview: PhotoRestourants.restourantBufet),
+    PlaceModel(
+      name: 'SkyPizza',
+      address: 'Dobrovolskogo 23',
+      rating: 4.3,
+      commuteTime: 15,
+      imagePreview: PhotoRestourants.restourantSkyPizza,
+    ),
+    PlaceModel(
+      name: 'Mafia',
+      address: 'Zakory 26',
+      rating: 4.6,
+      commuteTime: 12,
+      imagePreview: PhotoRestourants.restourantMafia,
+    ),
+    PlaceModel(
+      name: 'RestoPresto',
+      address: 'Dniprovska 2',
+      rating: 4.0,
+      commuteTime: 5,
+      imagePreview: PhotoRestourants.restourantRestoPresto,
+    ),
+    PlaceModel(
+      name: 'Bufet',
+      address: 'Moskovskiy prospekt 256',
+      rating: 4.8,
+      commuteTime: 23,
+      imagePreview: PhotoRestourants.restourantBufet,
+    ),
   ];
 
   static final List<UpMenuModel> dummyMenu = [
@@ -25,5 +48,3 @@ class DummyData {
     UpMenuModel(icon: UpMenuIcons.dessert, name: 'Dessert'),
   ];
 }
-
-
