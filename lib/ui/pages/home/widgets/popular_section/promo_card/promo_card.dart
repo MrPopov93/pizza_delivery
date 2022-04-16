@@ -16,9 +16,15 @@ class PromoCard extends StatelessWidget {
       height: 80,
       width: MediaQuery.of(context).size.width / 3 - (PaddingsSize.generalPadding),
       color: Colors.grey,
-      child: Text(
-        pizzaModel.name,
-        textAlign: TextAlign.center,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(pizzaModel.image,height: 110),
+          Text(
+            pizzaModel.name,
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }

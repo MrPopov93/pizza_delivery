@@ -67,8 +67,13 @@ flutter:
     - assets/images/pizza/hot.png
     - assets/images/pizza/cheese.png
     - assets/images/restourants/Bufet.jpg
-    - assets/images/restourants/Bufet.jpg
+    - assets/images/restourants/RestoPresto.jpg
     - assets/images/restourants/SkyPizza.jpg
+    - assets/images/restourants/Mafia.jpg
+    - assets/icons/up_menu/drink.png
+    - assets/icons/up_menu/pizza.png
+    - assets/icons/up_menu/pie.png
+    - assets/icons/up_menu/fork.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

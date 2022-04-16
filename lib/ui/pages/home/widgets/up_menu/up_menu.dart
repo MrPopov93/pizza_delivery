@@ -1,20 +1,37 @@
 import 'package:flutter/material.dart';
 
-class UpMenu extends StatelessWidget {
-  const UpMenu ({Key? key}) : super(key: key);
+import '../../../../../const/dummy_data.dart';
+import '../../../../../models/up_menu/up_menu.dart';
+
+
+class UpMenuCard extends StatelessWidget {
+  const UpMenuCard({Key? key}) : super(key: key);
+
+
+  // const UpMenuCard({required this.upMenuModel, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return
+      Row(
       children: [
         Container(
-          color: Colors.blue,
-          child: Column(
-            children: [
-              Icon(Icons.fork_left),
-              Text("Dishes",
-              ),],
-          ),
+          child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyData.dummyMenu.length,
+              itemBuilder: (context, index) {
+                return UpMenuCard(: DummyData.dummyMenu[index]);
+              }),
+          // height: 80,
+          // width: 80,
+          // padding: EdgeInsets.all(10.0),
+          // color: Colors.blue,
+          // child: Column(
+          //   children: [
+          //     // Image.asset(upMenuModel.icon, height: 45),
+          //     Text("Dishes",
+          //     ),],
+          // ),
         )
       ],
     );

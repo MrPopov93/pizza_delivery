@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_delivery/models/up_menu/up_menu.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/popular_section/popular_section.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/promo_carousel/promo_carousel.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/restaurants/restaurants.dart';
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             SearchWidget(),
-            UpMenu(),
+            UpMenuCard(),
             Restaurants(),
             PromoCarousel(),
             PopularSection(),

@@ -15,7 +15,7 @@ class RestaurantItem extends StatelessWidget {
         color: Colors.deepPurpleAccent,
         child: Column(
           children: [
-            // Image(image: restaurant)
+            Image.asset(restaurant.imagePreview, height: 50),
             Column(
               children: [
                 Text(restaurant.name),
