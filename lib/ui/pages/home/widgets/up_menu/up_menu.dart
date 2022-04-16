@@ -5,7 +5,7 @@ import '../../../../../models/up_menu/up_menu.dart';
 
 
 class UpMenuCard extends StatelessWidget {
-  const UpMenuCard({Key? key}) : super(key: key);
+  const UpMenuCard({Key? key, UpMenuModel}) : super(key: key);
 
 
   // const UpMenuCard({required this.upMenuModel, Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class UpMenuCard extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: DummyData.dummyMenu.length,
               itemBuilder: (context, index) {
-                return UpMenuCard(: DummyData.dummyMenu[index]);
+                return UpMenuCard(UpMenuModel: DummyData.dummyMenu[index]);
               }),
           // height: 80,
           // width: 80,
