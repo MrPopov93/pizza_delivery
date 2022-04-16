@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_delivery/const/decoration.dart';
 
 import '../../../../../const/dummy_data.dart';
 
@@ -15,19 +16,26 @@ class UpMenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 7, vertical: 15),
+      decoration: AppDecorations.generalDecoration,
       height: 80,
-      width: (MediaQuery.of(context).size.width - 16) / DummyData.dummyMenu.length,
-      child: Card(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset(
-              icon,
-              height: 20,
-            ),
-            Text(title),
-          ],
-        ),
+      width:
+          (MediaQuery.of(context).size.width - 75) / DummyData.dummyMenu.length,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            icon,
+            height: 30,
+          ),
+          Text(
+            title,
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                color: Colors.black54),
+          ),
+        ],
       ),
     );
   }

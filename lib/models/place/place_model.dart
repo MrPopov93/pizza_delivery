@@ -3,6 +3,7 @@ class PlaceModel {
   final String address;
   final double rating;
   final int commuteTime;
+  final int commitDistance;
   final String imagePreview;
 
   const PlaceModel({
@@ -10,6 +11,7 @@ class PlaceModel {
     required this.address,
     required this.rating,
     required this.commuteTime,
+    required this.commitDistance,
     required this.imagePreview,
   });
 }

@@ -5,9 +5,24 @@ import 'package:pizza_delivery/models/up_menu/up_menu.dart';
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
-    PizzaModel(name: 'Margarita', image: AssetImages.pizzaMargarita, description: 'description', price: 20, size: 2),
-    PizzaModel(name: 'Apolinaria', image: AssetImages.pizzaApolinaria, description: 'description', price: 17, size: 1),
-    PizzaModel(name: 'Napolino', image: AssetImages.pizzaNapolino, description: 'description', price: 15.4, size: 1),
+    PizzaModel(
+        name: 'Margarita',
+        image: AssetImages.pizzaMargarita,
+        description: 'description',
+        price: 20,
+        size: 2),
+    PizzaModel(
+        name: 'Apolinaria',
+        image: AssetImages.pizzaApolinaria,
+        description: 'description',
+        price: 17,
+        size: 1),
+    PizzaModel(
+        name: 'Napolino',
+        image: AssetImages.pizzaNapolino,
+        description: 'description',
+        price: 15.4,
+        size: 1),
   ];
 
   static final List<PlaceModel> dummyPlaces = [
@@ -16,6 +31,7 @@ class DummyData {
       address: 'Dobrovolskogo 23',
       rating: 4.3,
       commuteTime: 15,
+      commitDistance: 3,
       imagePreview: PhotoRestourants.restourantSkyPizza,
     ),
     PlaceModel(
@@ -23,6 +39,7 @@ class DummyData {
       address: 'Zakory 26',
       rating: 4.6,
       commuteTime: 12,
+      commitDistance: 10,
       imagePreview: PhotoRestourants.restourantMafia,
     ),
     PlaceModel(
@@ -30,6 +47,7 @@ class DummyData {
       address: 'Dniprovska 2',
       rating: 4.0,
       commuteTime: 5,
+      commitDistance: 15,
       imagePreview: PhotoRestourants.restourantRestoPresto,
     ),
     PlaceModel(
@@ -37,6 +55,7 @@ class DummyData {
       address: 'Moskovskiy prospekt 256',
       rating: 4.8,
       commuteTime: 23,
+      commitDistance: 6,
       imagePreview: PhotoRestourants.restourantBufet,
     ),
   ];

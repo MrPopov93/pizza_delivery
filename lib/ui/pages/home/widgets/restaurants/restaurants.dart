@@ -9,12 +9,20 @@ class Restaurants extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: const [
-            Text('Restourants:'),
-            Text('1/4'),
-          ],
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: const [
+              Text('Restourants:',style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 18,
+              ),),
+              Text('1/4',style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18),),
+            ],
+          ),
         ),
         Container(
           height: 130,
