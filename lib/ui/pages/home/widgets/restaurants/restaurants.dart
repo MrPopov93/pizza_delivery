@@ -14,13 +14,17 @@ class Restaurants extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [
-              Text('Restourants:',style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 18,
-              ),),
-              Text('1/4',style: TextStyle(
+              Text(
+                'Restourants:',
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 18),),
+                  fontSize: 18,
+                ),
+              ),
+              Text(
+                '1/4',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
             ],
           ),
         ),
@@ -30,7 +34,10 @@ class Restaurants extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: DummyData.dummyPlaces.length,
               itemBuilder: (context, index) {
-                return RestaurantItem(restaurant: DummyData.dummyPlaces[index]);
+                return RestaurantItem(
+                  restaurant: DummyData.dummyPlaces[index],
+                  callback: () => print('added to favorites ${DummyData.dummyPlaces[index].name}'),
+                );
               }),
         ),
       ],
