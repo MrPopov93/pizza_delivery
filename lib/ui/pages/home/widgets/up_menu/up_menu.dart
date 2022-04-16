@@ -17,10 +17,9 @@ class UpMenuCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-      decoration: AppDecorations.generalDecoration,
+      decoration: AppDecorations.generalDecoration(),
       height: 80,
-      width:
-          (MediaQuery.of(context).size.width - 80) / DummyData.dummyMenu.length,
+      width: (MediaQuery.of(context).size.width - 80) / DummyData.dummyMenu.length,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -30,10 +29,7 @@ class UpMenuCard extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16,
-                color: Colors.black54),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.black54),
           ),
         ],
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_delivery/const/app_text_styles.dart';
 import 'package:pizza_delivery/const/decoration.dart';
 import 'package:pizza_delivery/models/place/place_model.dart';
 import 'package:pizza_delivery/ui/pages/home/widgets/restaurants/restaurant_item/widgets/restaurant_item_el.dart';
@@ -19,7 +20,7 @@ class RestaurantItem extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       //где указаны отступы межды ресторанами?
       child: Container(
-        decoration: AppDecorations.generalDecoration,
+        decoration: AppDecorations.generalDecoration(),
         width: 280,
         // color: Colors.deepPurpleAccent,
         child: Stack(
@@ -53,7 +54,13 @@ class RestaurantItem extends StatelessWidget {
                 //     ),
                 //   ],
                 // ),
-                Text(restaurant.name),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    restaurant.name,
+                    style: AppTextStyles.mainText(),
+                  ),
+                ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
                   child: Row(
