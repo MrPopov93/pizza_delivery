@@ -17,7 +17,7 @@ class PopularSection extends StatelessWidget {
           ],
         ),
         Container(
-          height: 100,
+          height: 160,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: DummyData.dummyPizza.length,

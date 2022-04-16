@@ -7,14 +7,25 @@ class Restaurants extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      child: ListView.builder(
-          scrollDirection: Axis.horizontal,
-          itemCount: DummyData.dummyPlaces.length,
-          itemBuilder: (context, index) {
-            return RestaurantItem(restaurant: DummyData.dummyPlaces[index]);
-          }),
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: const [
+            Text('Restourants:'),
+            Text('1/4'),
+          ],
+        ),
+        Container(
+          height: 130,
+          child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: DummyData.dummyPlaces.length,
+              itemBuilder: (context, index) {
+                return RestaurantItem(restaurant: DummyData.dummyPlaces[index]);
+              }),
+        ),
+      ],
     );
   }
 }

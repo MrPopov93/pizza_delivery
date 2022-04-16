@@ -6,7 +6,7 @@ class SearchWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 70,
+      height: 30,
       color: Colors.orange,
       child: TextField(),
     );

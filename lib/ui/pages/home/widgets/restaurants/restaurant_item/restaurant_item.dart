@@ -9,12 +9,21 @@ class RestaurantItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          Text(restaurant.name),
-          Text(restaurant.address),
-        ],
+      padding: const EdgeInsets.all(8.0),//где указаны отступы межды ресторанами?
+      child: Container(
+        width: 280,
+        color: Colors.deepPurpleAccent,
+        child: Column(
+          children: [
+            // Image(image: restaurant)
+            Column(
+              children: [
+                Text(restaurant.name),
+              ],
+            ),
+            Text(restaurant.address),
+          ],
+        ),
       ),
     );
   }

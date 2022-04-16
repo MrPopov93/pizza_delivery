@@ -20,19 +20,29 @@ class _MainAppBarState extends State<MainAppBar> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('dwada'),
+            Row(
+              children: const [
+                Icon(Icons.location_on_outlined),
+                Text('Your location'),
+                Icon(Icons.keyboard_arrow_down_rounded),
+              ],
+            ),
             Row(
               children: [
                 Container(
-                  width: 20,
-                  height: 20,
-                  color: Colors.orange,
+                  width: 35,
+                  height: 35,
+                  color: Colors.red,
+                  child: const Icon(Icons.shopping_bag_outlined,
+                      color: Colors.white, size: 22),
                 ),
-                SizedBox(width: 6),
+                const SizedBox(width: 6),
                 Container(
-                  width: 20,
-                  height: 20,
-                  color: Colors.orange,
+                  width: 35,
+                  height: 35,
+                  color: Colors.red,
+                  child: const Icon(Icons.storage_rounded,
+                      color: Colors.white, size: 22),
                 )
               ],
             ),

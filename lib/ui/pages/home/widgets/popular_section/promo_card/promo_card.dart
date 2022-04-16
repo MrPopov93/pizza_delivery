@@ -15,7 +15,7 @@ class PromoCard extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
       height: 80,
       width: MediaQuery.of(context).size.width / 3 - (PaddingsSize.generalPadding),
-      color: Colors.red,
+      color: Colors.grey,
       child: Text(
         pizzaModel.name,
         textAlign: TextAlign.center,

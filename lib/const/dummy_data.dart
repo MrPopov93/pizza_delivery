@@ -3,6 +3,7 @@ import 'package:pizza_delivery/models/place/place_model.dart';
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
+    // PizzaModel(name: 'Margarita', image: 'assets/images/pizza/Margarita.png', description: 'description', price: 20, size: 2),
     PizzaModel(name: 'Margarita', image: 'image', description: 'description', price: 20, size: 2),
     PizzaModel(name: 'Apolinaria', image: 'image', description: 'description', price: 17, size: 1),
     PizzaModel(name: 'Napolino', image: 'image', description: 'description', price: 15.4, size: 1),
