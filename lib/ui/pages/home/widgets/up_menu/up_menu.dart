@@ -16,11 +16,11 @@ class UpMenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 7, vertical: 15),
+      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
       decoration: AppDecorations.generalDecoration,
       height: 80,
       width:
-          (MediaQuery.of(context).size.width - 75) / DummyData.dummyMenu.length,
+          (MediaQuery.of(context).size.width - 80) / DummyData.dummyMenu.length,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

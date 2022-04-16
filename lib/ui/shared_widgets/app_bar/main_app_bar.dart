@@ -9,7 +9,7 @@ class MainAppBar extends StatefulWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size(0, 56.0);
+  Size get preferredSize => Size(0, 80.0);
 }
 
 class _MainAppBarState extends State<MainAppBar> {
@@ -17,8 +17,9 @@ class _MainAppBarState extends State<MainAppBar> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        // margin: EdgeInsets.only(top: 40),
-        padding: EdgeInsets.symmetric(horizontal: 8.0),
+        color: Colors.deepPurple,
+        padding: EdgeInsets.only(top: 30, left: 8,right: 8),
+        // padding: EdgeInsets.symmetric(horizontal: 8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
