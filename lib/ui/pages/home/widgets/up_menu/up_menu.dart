@@ -15,9 +15,11 @@ class UpMenuCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 80,
       width: (MediaQuery.of(context).size.width - 16) / DummyData.dummyMenu.length,
       child: Card(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
               icon,
