@@ -1,4 +1,5 @@
 import 'package:pizza_delivery/const/asset_images.dart';
+import 'package:pizza_delivery/models/PromoCaruselModel/promo_carusel_model.dart';
 import 'package:pizza_delivery/models/pizza/pizza_model.dart';
 import 'package:pizza_delivery/models/place/place_model.dart';
 import 'package:pizza_delivery/models/up_menu/up_menu.dart';
@@ -7,24 +8,9 @@ import 'package:pizza_delivery/ui/pages/home/widgets/promo_carousel/promo_caruse
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
-    PizzaModel(
-        name: 'Margarita',
-        image: AssetImages.pizzaMargarita,
-        description: 'description',
-        price: 20,
-        size: 2),
-    PizzaModel(
-        name: 'Apolinaria',
-        image: AssetImages.pizzaApolinaria,
-        description: 'description',
-        price: 17,
-        size: 1),
-    PizzaModel(
-        name: 'Napolino',
-        image: AssetImages.pizzaNapolino,
-        description: 'description',
-        price: 15.4,
-        size: 1),
+    PizzaModel(name: 'Margarita', image: AssetImages.pizzaMargarita, description: 'description', price: 20, size: 2),
+    PizzaModel(name: 'Apolinaria', image: AssetImages.pizzaApolinaria, description: 'description', price: 17, size: 1),
+    PizzaModel(name: 'Napolino', image: AssetImages.pizzaNapolino, description: 'description', price: 15.4, size: 1),
   ];
 
   static final List<PlaceModel> dummyPlaces = [
@@ -63,15 +49,38 @@ class DummyData {
   ];
 
   static final List<UpMenuModel> dummyMenu = [
-    UpMenuModel(icon: UpMenuIcons.dishes, name: 'Dishes',),
-    UpMenuModel(icon: UpMenuIcons.drinks, name: 'Drinks',),
-    UpMenuModel(icon: UpMenuIcons.pizza, name: 'Pizza',),
-    UpMenuModel(icon: UpMenuIcons.dessert, name: 'Dessert',),
+    UpMenuModel(
+      icon: UpMenuIcons.dishes,
+      name: 'Dishes',
+    ),
+    UpMenuModel(
+      icon: UpMenuIcons.drinks,
+      name: 'Drinks',
+    ),
+    UpMenuModel(
+      icon: UpMenuIcons.pizza,
+      name: 'Pizza',
+    ),
+    UpMenuModel(
+      icon: UpMenuIcons.dessert,
+      name: 'Dessert',
+    ),
   ];
 
-  static final List <PromoCarouselModel> dummyPromo =[
-    PromoCarouselModel(name1: 'text0', PromoImage: PromoPhoto.hot),
-    PromoCarouselModel(name: 'text1', PromoImage: PromoPhoto.cheese),
-    PromoCarouselModel(name: 'text2', PromoImage: PromoPhoto.classic),
+  static final List<PromoCaruselModel> dummyPromo = [
+    PromoCaruselModel(
+        promoTypes: PromoTypes.huge, description: 'Some awesome description to huge text', title: 'Huge text', promoImage: PromoPhoto.hot),
+    PromoCaruselModel(
+      promoTypes: PromoTypes.regular,
+      description: 'azaza',
+      title: 'Regular title',
+      promoImage: PromoPhoto.cheese,
+    ),
+    PromoCaruselModel(
+      promoTypes: PromoTypes.empty,
+      description: 'lololo',
+      title: 'text2',
+      promoImage: PromoPhoto.classic,
+    ),
   ];
 }

@@ -32,9 +32,11 @@ class UpMenuCard extends StatelessWidget {
           SizedBox(
             height: 4,
           ),
-          Text(
-            title,
-            style: AppTextStyles.upMenuText(),
+          FittedBox(
+            child: Text(
+              title,
+              style: AppTextStyles.upMenuText(),
+            ),
           ),
         ],
       ),
