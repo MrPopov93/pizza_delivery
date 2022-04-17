@@ -18,8 +18,9 @@ class PopularSection extends StatelessWidget {
               style: AppTextStyles.mainText(),
             ),
             Text(
-              'See all',
-              style: AppTextStyles.mainText(),
+              'See all', style: TextStyle(
+              color: Colors.redAccent
+            ),
             ),
           ],
         ),

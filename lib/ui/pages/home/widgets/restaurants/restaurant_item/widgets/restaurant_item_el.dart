@@ -4,7 +4,8 @@ class RestauranItemel extends StatelessWidget {
   final IconData iconData;
   final String text;
 
-  const RestauranItemel({required this.iconData, required this.text, Key? key}) : super(key: key);
+  const RestauranItemel({required this.iconData, required this.text,
+    Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +13,10 @@ class RestauranItemel extends StatelessWidget {
       children: [
         Icon(
           iconData,
-          size: 12,
+          size: 18,
           color: Colors.redAccent,
         ),
-        Text(text),
+        Text(text, style: TextStyle(fontWeight: FontWeight.w400),),
       ],
     );
   }

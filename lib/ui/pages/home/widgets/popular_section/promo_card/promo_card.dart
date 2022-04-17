@@ -11,7 +11,7 @@ class PromoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: AppDecorations.generalDecoration(color: Colors.lightGreen),
+      decoration: AppDecorations.generalDecoration(),
       margin: EdgeInsets.symmetric(horizontal: 4.0, vertical: 8.0),
       height: 80,
       width: MediaQuery.of(context).size.width / 3 - (PaddingsSize.generalPadding),

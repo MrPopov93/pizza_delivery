@@ -2,6 +2,8 @@ import 'package:pizza_delivery/const/asset_images.dart';
 import 'package:pizza_delivery/models/pizza/pizza_model.dart';
 import 'package:pizza_delivery/models/place/place_model.dart';
 import 'package:pizza_delivery/models/up_menu/up_menu.dart';
+import 'package:pizza_delivery/ui/pages/home/widgets/promo_carousel/promo_carousel.dart';
+import 'package:pizza_delivery/ui/pages/home/widgets/promo_carousel/promo_carusel_container/promo_carusel_container.dart';
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
@@ -61,9 +63,15 @@ class DummyData {
   ];
 
   static final List<UpMenuModel> dummyMenu = [
-    UpMenuModel(name: 'Dishes', icon: UpMenuIcons.dishes),
-    UpMenuModel(icon: UpMenuIcons.drinks, name: 'Drinks'),
-    UpMenuModel(icon: UpMenuIcons.pizza, name: 'Pizza'),
-    UpMenuModel(icon: UpMenuIcons.dessert, name: 'Dessert'),
+    UpMenuModel(icon: UpMenuIcons.dishes, name: 'Dishes',),
+    UpMenuModel(icon: UpMenuIcons.drinks, name: 'Drinks',),
+    UpMenuModel(icon: UpMenuIcons.pizza, name: 'Pizza',),
+    UpMenuModel(icon: UpMenuIcons.dessert, name: 'Dessert',),
+  ];
+
+  static final List <PromoCarouselModel> dummyPromo =[
+    PromoCarouselModel(name1: 'text0', PromoImage: PromoPhoto.hot),
+    PromoCarouselModel(name: 'text1', PromoImage: PromoPhoto.cheese),
+    PromoCarouselModel(name: 'text2', PromoImage: PromoPhoto.classic),
   ];
 }

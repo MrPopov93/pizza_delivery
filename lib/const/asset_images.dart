@@ -20,4 +20,11 @@ class UpMenuIcons {
   static String drinks = 'assets/icons/up_menu/drink.png';
   static String pizza = 'assets/icons/up_menu/pizza.png';
   static String dessert = 'assets/icons/up_menu/pie.png';
+
+}
+
+class PromoPhoto {
+  static String classic = 'assets/images/pizza/classic.png';
+  static String hot = 'assets/images/pizza/hot.png';
+  static String cheese = 'assets/images/pizza/cheese.png';
 }

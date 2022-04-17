@@ -27,51 +27,32 @@ class RestaurantItem extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset(restaurant.imagePreview, width: double.infinity, fit: BoxFit.cover, height: 70),
-                // Column(
-                //   children: [
-                //     Row(
-                //       children: [
-                //         SizedBox(width: 5),
-                //         Text(
-                //           restaurant.address,
-                //           style:
-                //               TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                //         ),
-                //       ],
-                //     ),
-                //     Row(
-                //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //       children: [
-                //         Container(
-                //           child: Icon(Icons.location_on_outlined,
-                //               size: 20, color: Colors.redAccent),
-                //         ),
-                //         Icon(Icons.access_time, size: 20, color: Colors.redAccent),
-                //         Icon(Icons.star_border, size: 20, color: Colors.redAccent),
-                //         Text(restaurant.rating.toString()),
-                //       ],
-                //     ),
-                //   ],
-                // ),
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    restaurant.name,
-                    style: AppTextStyles.mainText(),
+                Image.asset(restaurant.imagePreview,
+                    width: double.infinity, fit: BoxFit.cover, height: 66),
+                SizedBox(
+                    height:6),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      restaurant.name,
+                      style: AppTextStyles.mainText(),
+                    ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 8.0, vertical: 2.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       RestauranItemel(
-                        iconData: Icons.add_location,
+                        iconData: Icons.location_on_outlined,
                         text: '${restaurant.commitDistance} km',
                       ),
                       RestauranItemel(
-                        iconData: Icons.timer,
+                        iconData: Icons.access_time_rounded,
                         text: '${restaurant.commuteTime} min',
                       ),
                       RestauranItemel(

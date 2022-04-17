@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.grey,
+      // color: Colors.grey,
       padding: EdgeInsets.symmetric(horizontal: 8.0),
       child: Center(
         child: Column(
