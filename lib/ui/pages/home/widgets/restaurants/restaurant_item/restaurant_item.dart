@@ -72,10 +72,11 @@ class RestaurantItem extends StatelessWidget {
                 onTap: callback,
                 splashColor: Colors.red,
                 child: CircleAvatar(
-                  backgroundColor: Colors.white.withOpacity(0.8),
+                  radius: 16,
+                  backgroundColor: Colors.white.withOpacity(1),
                   child: Icon(
                     Icons.heart_broken_outlined,
-                    color: Colors.green,
+                    color: Colors.grey,
                   ),
                 ),
               ),

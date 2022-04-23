@@ -10,7 +10,7 @@ class PromoCarousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      options: CarouselOptions(viewportFraction: 1, height: 190.0),
+      options: CarouselOptions(viewportFraction: 1, height: 220.0),
       items: DummyData.dummyPromo.map((i) {
         return showContent(i);
 

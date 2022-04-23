@@ -15,5 +15,19 @@ class AppTextStyles {
         color: Colors.black54);
 
   }
+  static TextStyle promoCaruselTitle() {
+    return TextStyle(
+      fontSize: 30,
+      fontWeight: FontWeight.bold,
+      color: Colors.white,
+    );
+  }
+  static TextStyle promoCaruselDiscription() {
+    return TextStyle(
+      fontSize: 14,
+      color: Colors.white70,
+      fontWeight: FontWeight.bold,
+    );
+  }
 
 }

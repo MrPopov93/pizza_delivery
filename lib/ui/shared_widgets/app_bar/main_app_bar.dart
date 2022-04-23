@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_delivery/const/app_text_styles.dart';
-import 'package:pizza_delivery/const/decoration.dart';
 
 class MainAppBar extends StatefulWidget implements PreferredSizeWidget {
   const MainAppBar({Key? key}) : super(key: key);

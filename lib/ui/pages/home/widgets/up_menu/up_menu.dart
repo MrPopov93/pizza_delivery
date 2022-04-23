@@ -27,7 +27,7 @@ class UpMenuCard extends StatelessWidget {
         children: [
           Image.asset(
             icon,
-            height: 30,
+            height: 34,
           ),
           SizedBox(
             height: 4,

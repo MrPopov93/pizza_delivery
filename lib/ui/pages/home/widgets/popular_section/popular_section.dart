@@ -10,19 +10,22 @@ class PopularSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              'Popular',
-              style: AppTextStyles.mainText(),
-            ),
-            Text(
-              'See all', style: TextStyle(
-              color: Colors.redAccent
-            ),
-            ),
-          ],
+        Container(
+          margin: EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Popular',
+                style: AppTextStyles.mainText(),
+              ),
+              Text(
+                'See all', style: TextStyle(
+                color: Colors.redAccent
+              ),
+              ),
+            ],
+          ),
         ),
         Container(
           height: 160,
