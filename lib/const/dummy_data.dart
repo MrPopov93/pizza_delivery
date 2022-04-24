@@ -11,24 +11,9 @@ import 'package:pizza_delivery/ui/pages/home/widgets/up_menu/up_menu.dart';
 
 class DummyData {
   static final List<PizzaModel> dummyPizza = [
-    PizzaModel(
-        name: 'Margarita',
-        image: AssetImages.pizzaMargarita,
-        description: 'description',
-        price: 20,
-        size: 2),
-    PizzaModel(
-        name: 'Apolinaria',
-        image: AssetImages.pizzaApolinaria,
-        description: 'description',
-        price: 17,
-        size: 1),
-    PizzaModel(
-        name: 'Napolino',
-        image: AssetImages.pizzaNapolino,
-        description: 'description',
-        price: 15.4,
-        size: 1),
+    PizzaModel(name: 'Margarita', image: AssetImages.pizzaMargarita, description: 'description', price: 20, size: 2),
+    PizzaModel(name: 'Apolinaria', image: AssetImages.pizzaApolinaria, description: 'description', price: 17, size: 1),
+    PizzaModel(name: 'Napolino', image: AssetImages.pizzaNapolino, description: 'description', price: 15.4, size: 1),
   ];
 
   static final List<PlaceModel> dummyPlaces = [
@@ -87,14 +72,10 @@ class DummyData {
 
   static final List<PromoCaruselModel> dummyPromo = [
     PromoCaruselModel(
-        promoTypes: PromoTypes.huge,
-        description: '10% discount when \nordering',
-        title: 'New hot \nsandwich!',
-        promoImage: PromoPhoto.hot),
+        promoTypes: PromoTypes.huge, description: '10% discount when \nordering', title: 'New hot \nsandwich!', promoImage: PromoPhoto.hot),
     PromoCaruselModel(
       promoTypes: PromoTypes.regular,
-      description:
-          'Does low-moisture mozzarella melt well? Yes. This is one limber '
+      description: 'Does low-moisture mozzarella melt well? Yes. This is one limber '
           'cheese that never forgets to stretch. As well as bringing stringy cheesiness,'
           ' it bubbles and browns like a dream.How to use low moisture mozzarella on pizza:',
       title: 'Cheese pizza',
@@ -122,14 +103,14 @@ class DummyData {
     PizzaCardModel(
       name: 'Pizza with chicken',
       image: AssetImages.pizzacheese,
-      rating: 5.0,
+      rating: 2.5,
       price: 19.99,
       weight: 300,
     ),
     PizzaCardModel(
       name: 'Pizza hot',
       image: AssetImages.pizzahot,
-      rating: 4.0,
+      rating: 4.5,
       price: 25,
       weight: 350,
     ),
@@ -143,7 +124,7 @@ class DummyData {
     PizzaCardModel(
       name: 'Pizza Margarita',
       image: AssetImages.pizzaMargarita,
-      rating: 5.0,
+      rating: 3.5,
       price: 19.99,
       weight: 300,
     ),

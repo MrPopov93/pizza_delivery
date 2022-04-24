@@ -14,20 +14,24 @@ class MenuPage extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8.0),
       child: Center(
-        child: Column(
+        child: ListView(
           children: [
-            // UpCard(title: 'd'),
+            //UpCard(title: 'd'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: DummyData.dummyMenuCard
+                    .map(
+                      (e) => UpCard(
+                        title: e.title,
+                      ),
+                    )
+                    .toList(),
+              ),
+            ),
             SearchWidget(),
             PizzaCard(),
-
-            // Row(
-            //   children: DummyData.dummyMenuCard
-            //       .map((e) => UpMenuCardModel(
-            //       title: e.title,
-            //   ))
-            //   .toList(),
-            //
-            // ),
           ],
         ),
       ),
